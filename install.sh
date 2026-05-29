@@ -14,7 +14,7 @@ NC='\033[0m'
 
 SCRIPTS_DIR="$(cd "$(dirname "$0")" && pwd)"
 LOG_FILE="/var/log/instalacao_pdv_socin.log"
-TOTAL_STEPS=10  # atualizar conforme novos scripts forem adicionados
+TOTAL_STEPS=11  # atualizar conforme novos scripts forem adicionados
 
 # =============================================================
 #  FUNÇÕES UTILITÁRIAS
@@ -129,6 +129,7 @@ run_step  7  "Fuso Horário e NTP"                "07_hora.sh"
 run_step  8  "Desabilitar Notif. Impressora"     "08_impressora.sh"
 run_step  9  "Resolução e Ambiente OPENBOX"       "09_ambiente.sh"
 run_step 10  "Finalização e Cópia de Arquivos"    "10_finalizar.sh"
+run_step 11  "Cadastro de Clientes (Firefox)"     "11_cadastro_clientes.sh"
 
 # =============================================================
 #  FINALIZAÇÃO
